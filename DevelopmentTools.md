@@ -26,3 +26,12 @@ ln -s jdk-XX.X.X latest
 ```
 
 Lastly, setup the necessary environment variables and `PATH` in the .bash_profile file.
+
+```
+# OpenJDK
+openjdk=~/Applications/OpenJDK/latest
+if [ -d $openjdk ]; then
+	export JAVA_HOME=$openjdk
+	PATH="$openjdk/bin:$PATH"
+fi
+```
