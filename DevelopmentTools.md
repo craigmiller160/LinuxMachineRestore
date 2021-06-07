@@ -20,13 +20,13 @@ tar xvf ~/Applications/OpenJDK/openjdk-*.tar.gz -C ~/Applications/OpenJDK
 rm ~/Applications/OpenJDK/*.tar.gz
 ```
 
-Next, symlink the `latest` directory from the OpenJDK file.
+Next, symlink the `latest` directory from the OpenJDK directory.
 
 ```
 ln -s ~/Applications/OpenJDK/jdk-* ~/Applications/OpenJDK/latest
 ```
 
-Lastly, setup the necessary environment variables and `PATH` in the .bash_profile file.
+Lastly, setup the necessary environment variables and `PATH` in the `.bash_profile` file.
 
 ```
 # OpenJDK
@@ -55,9 +55,58 @@ tar xvf ~/Applications/NodeJS/node-*.tar.xz -C ~/Applications/NodeJS
 rm ~/Applications/NodeJS/*.tar.xz
 ```
 
-Next, symlink the `latest` directory from the OpenJDK file.
+Next, symlink the `latest` directory from the NodeJS directory.
 
 ```
 ln -s ~/Applications/NodeJS/node-* ~/Applications/NodeJS/latest
 ```
 
+Lastly, setup the necessary `PATH` in the `.bash_profile` file.
+
+```
+# NodeJS
+nodejs=~/Applications/NodeJS/latest
+if [ -d $nodejs ]; then
+	PATH="$nodejs/bin:$PATH"
+fi
+```
+
+## IntelliJ
+
+First, go to this link to download the Ultimate Edition of IntelliJ: <a href="https://www.jetbrains.com/idea/download/#section=linux">Download IntelliJ</a>
+
+Then, create the IntelliJ directory with this command:
+
+```
+mkdir -p ~/Applications/IntelliJ
+```
+
+Next, copy the IntelliJ tar file to this location, unpack it, and delete the tar:
+
+```
+cp ~/Downloads/ideaIU-*.tar.gz ~/Applications/IntelliJ
+tar xvf ~/Applications/IntelliJ/ideaIU-*.tar.gz -C ~/Applications/IntelliJ
+rm ~/Applications/IntelliJ/*.tar.gz
+```
+
+Next, symlink the `latest` directory from the IntelliJ directory.
+
+```
+ln -s ~/Applications/IntelliJ/idea-IU-* ~/Applications/IntelliJ/latest
+```
+
+Next, run IntelliJ for the first time with this command:
+
+```
+~/Applications/IntelliJ/latest/bin/idea.sh
+```
+
+Accept the license agreement and navigate through the prompts to the license key. The credentials for this can be found in 1Password.
+
+Now, close IntelliJ. Then copy the desktop file from this project to the appropriate directory:
+
+```
+cp ~/Development/Projects/Restore/jetbrains-idea.deskop ~/.local/share/applications
+```
+
+Now IntelliJ should be able to be opened from the applications menu.
