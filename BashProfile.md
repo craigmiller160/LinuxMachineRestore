@@ -24,3 +24,23 @@ fi
 ## Restart Terminal
 
 To confirm this works, restart the terminal. "Loaded .bash_profile" should print out when the prompt opens.
+
+## Setup Bash Git Prompt
+
+This adds the Git prompt information to the terminal.
+
+First, clone the repo:
+
+```
+git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
+```
+
+Then, add the following to the end of the `.bash_profile` file:
+
+```
+# Bash Git Prompt
+if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
+    GIT_PROMPT_ONLY_IN_REPO=1
+    source $HOME/.bash-git-prompt/gitprompt.sh
+fi
+```
