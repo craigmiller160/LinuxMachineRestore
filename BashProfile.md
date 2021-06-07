@@ -41,6 +41,7 @@ Then, add the following to the end of the `.bash_profile` file:
 # Bash Git Prompt
 if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
     GIT_PROMPT_ONLY_IN_REPO=1
+    GIT_PROMPT_THEME=Default_Ubuntu
     source $HOME/.bash-git-prompt/gitprompt.sh
 fi
 ```
