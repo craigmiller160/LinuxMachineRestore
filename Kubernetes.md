@@ -16,3 +16,7 @@ Add this to the `.bash_profile`:
 # Kuberentes Auto-Complete
 source <(kubectl completion bash)
 ```
+
+## Setup Kubernetes Drive (Eventually)
+
+At some point I really need to setup a dedicated K8s drive so that I don't have to restore the drive each time. I'm not going to detail restore instructions, only because it's a mess.
