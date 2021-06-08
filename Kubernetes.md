@@ -2,6 +2,14 @@
 
 This is about restoring the Kubernetes cluster.
 
+## Create Authcode Directory
+
+Create this directory to support refreshing the TLS cert:
+
+```
+mkdir -p /home/craig/authcode
+```
+
 ## Clone and Follow Main Cluster Repo
 
 This repo has most of the instructions necessary for the restoration. Once it is cloned, follow the instructions inside. Of course, all the individual application repos will need to be cloned too.
