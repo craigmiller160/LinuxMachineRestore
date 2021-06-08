@@ -7,4 +7,5 @@ Just some helpful guides for when I wipe and restore my machine.
 ### 3. <a href="./BashProfile.md">Setup Bash Profile Settings</a>
 ### 4. <a href="./Vim.md">VIM</a>
 ### 5. <a href="./DevelopmentTools.md">Development Tools</a>
-### 6. <a href="./Kubernetes.md">Kubernetes</a>
+### 6. <a href="./Docker.md">Docker</a>
+### 7. <a href="./Kubernetes.md">Kubernetes</a>
