@@ -8,3 +8,11 @@ This repo has most of the instructions necessary for the restoration. Once it is
 
 <a href="https://github.com/craigmiller160/LocalKubernetesDeployment">Local Kubernetes Deployment</a>
 
+## Setup Kubernetes Auto-Complete
+
+Add this to the `.bash_profile`:
+
+```
+# Kuberentes Auto-Complete
+source <(kubectl completion bash)
+```
