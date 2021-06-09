@@ -28,3 +28,19 @@ source <(kubectl completion bash)
 ## Setup Kubernetes Drive (Eventually)
 
 At some point I really need to setup a dedicated K8s drive so that I don't have to restore the drive each time. I'm not going to detail restore instructions, only because it's a mess.
+
+## Setup Maven With Nexus
+
+Maven needs to be setup to load dependencies from Nexus.
+
+First, copy the `settings.xml` file to the Maven `.m2` directory:
+
+```
+mkdir -p ~/.m2/
+cp ~/Development/Applications/LocalKubernetesDeployment/nexus/settings.xml ~/.m2/
+```
+
+Then, edit the file and replace the password with the craigmiller160 password for Nexus in 1Password.
+
+## Setup NPM With Nexus
+
