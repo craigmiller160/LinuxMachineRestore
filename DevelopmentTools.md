@@ -110,3 +110,37 @@ cp ~/Development/Projects/Restore/jetbrains-idea.deskop ~/.local/share/applicati
 ```
 
 Now IntelliJ should be able to be opened from the applications menu.
+
+## Maven
+
+First, download the Maven binary from this link: https://maven.apache.org/download.cgi.
+
+Then, create the Maven directory:
+
+```
+mkdir -p ~/Applications/Maven
+```
+
+Next, copy and unpack the tar file:
+
+```
+cp ~/Downloads/apache-maven-*.tar.gz ~/Applications/Maven
+tar xvf ~/Applications/Maven/apache-maven-*.tar.gz -C ~/Applications/Maven
+rm ~/Applications/Maven/apache-maven-*.tar.gz
+```
+
+Next, symlink the `latest` directory from the maven directory:
+
+```
+ln -s ~/Applications/Maven/apache-maven-* ~/Applications/Maven/latest
+```
+
+Lastly, add the following lines to the `.bash_profile` file:
+
+```
+# Maven
+maven=~/Applications/Maven/latest
+if [ -d $maven ]; then
+	PATH="$maven/bin:$PATH"
+fi
+```
