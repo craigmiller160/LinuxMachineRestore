@@ -44,3 +44,24 @@ Then, edit the file and replace the password with the craigmiller160 password fo
 
 ## Setup NPM With Nexus
 
+NPM needs to be setup to work with Nexus.
+
+First, setup NPM to pull from the Nexus NPM registry:
+
+```
+npm config set registry https://craigmiller160.ddns.net:30003/repository/npm-group/
+```
+
+Then, add the craigmiller160 user whose password can be found in 1Password:
+
+```
+npm adduser --registry=https://craigmiller160.ddns.net:30003/repository/npm-private/
+```
+
+## Install Build Tool
+
+The custom build tool needs to be installed for future development.
+
+```
+npm i -g @craigmiller160/craig-build
+```
