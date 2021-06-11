@@ -144,3 +144,33 @@ if [ -d $maven ]; then
 	PATH="$maven/bin:$PATH"
 fi
 ```
+
+## Postman
+
+First, download the app from this link: https://www.postman.com/downloads/.
+
+Then, create a Postman directory:
+
+```
+mkdir -p ~/Applications/Postman
+```
+
+Then, copy and unpack the tar:
+
+```
+cp ~/Downloads/Postman-*.tar.gz ~/Applications/Postman
+tar xvf ~/Applications/Postman/Postman-*.tar.gz -C ~/Applications/Postman
+rm ~/Applications/Postman/Postman-*.tar.gz
+```
+
+Next, symlink the `latest` directory from the Postman directory:
+
+```
+ln -s ~/Applications/Postman/Postman ~/Applications/Postman/latest
+```
+
+Lastly, copy the desktop entry from this project:
+
+```
+cp ~/Development/Projects/Restore/Postman.desktop ~/.local/share/applications/
+```
