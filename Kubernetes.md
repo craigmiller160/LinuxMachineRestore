@@ -64,7 +64,7 @@ Add the following to the `.bash_profile` file, adding in the actual values:
 
 ```
 # Craig Build Nexus Docker Credentials
-export NEXUS_DOCKER_USERNAME=craigmiller160
+export NEXUS_DOCKER_USER=craigmiller160
 export NEXUS_DOCKER_PASSWORD=#####
 ```
 
