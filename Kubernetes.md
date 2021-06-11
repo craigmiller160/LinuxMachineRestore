@@ -58,6 +58,16 @@ Then, add the craigmiller160 user whose password can be found in 1Password:
 npm adduser --registry=https://craigmiller160.ddns.net:30003/repository/npm-private/
 ```
 
+## Setup Docker Environment Variables
+
+Add the following to the `.bash_profile` file, adding in the actual values:
+
+```
+# Craig Build Nexus Docker Credentials
+export NEXUS_DOCKER_USERNAME=craigmiller160
+export NEXUS_DOCKER_PASSWORD=#####
+```
+
 ## Install Build Tool
 
 The custom build tool needs to be installed for future development.
