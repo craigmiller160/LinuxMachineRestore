@@ -30,3 +30,13 @@ Open the `.vimrc` file with VIM and then run `:PluginInstall`.
 ## Setup Terminal Shortcuts
 
 To modify the terminal to use VIM shortcuts, copy the `.inputrc` file from this project to the root of the home directory.
+
+## Make VIM The Default Editor
+
+Add the following to the `.bash_profile` file:
+
+```
+# Set VIM as the Editor
+export VISUAL=vim
+export EDITOR=$VISUAL
+```
