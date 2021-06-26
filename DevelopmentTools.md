@@ -145,6 +145,40 @@ if [ -d $maven ]; then
 fi
 ```
 
+## Gradle
+
+First, download the app from this link: https://gradle.org/releases/
+
+Then, create a Gradle directory:
+
+```
+mkdir -p ~/Applications/Gradle
+```
+
+Then, copy and unpack the zip:
+
+```
+cp ~/Downloads/gradle*.zip ~/Applications/Gradle
+unzip ~/Applications/Gradle/gradle*.zip -d ~/Applications/Gradle
+rm ~/Applications/Gradle/*.zip
+```
+
+Next, symlink the `latest` directory from the Gradle directory:
+
+```
+ln -s ~/Applications/Gradle/gradle-* ~/Applications/Gradle/latest
+```
+
+Lastly, add the following lines to your `.bash_profile`:
+
+```
+# Gradle
+gradle=~/Applications/Gradle/latest
+if [ -d $gradle ]; then
+	PATH="$gradle/bin:$PATH"
+fi
+```
+
 ## Postman
 
 First, download the app from this link: https://www.postman.com/downloads/.
