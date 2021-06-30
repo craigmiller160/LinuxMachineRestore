@@ -1,0 +1,25 @@
+# Android Development
+
+## Install Android Studio
+
+Download Android Studio from this link: [Android Studio](https://developer.android.com/studio)
+
+Then, create the application directory:
+
+```
+mkdir -p ~/Applications/AndroidStudio
+```
+
+Then, copy the tar and unpack it:
+
+```
+cp ~/Downloads/android-studio-*.tar.gz ~/Applications/AndroidStudio
+tar xvf ~/Applications/AndroidStudio/android-studio-*.tar.gz -C ~/Applications/AndroidStudio
+rm ~/Applications/AndroidStudio/*.tar.gz
+```
+
+Then symlink it to the `latest` directory:
+
+```
+ln -s ~/Applications/AndroidStudio/android-studio ~/Applications/AndroidStudio/latest
+```
