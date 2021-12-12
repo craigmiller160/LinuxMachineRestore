@@ -23,3 +23,11 @@ Then symlink it to the `latest` directory:
 ```
 ln -s ~/Applications/AndroidStudio/android-studio ~/Applications/AndroidStudio/latest
 ```
+
+Then, run the app: `~/Applications/AndroidStudio/latest/studio.sh`, and go through the setup wizard.
+
+Look into hardware acceleration at this link: [Hardware Acceleration](https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio#vm-linux)
+
+This is a bit complicated... come back to it.
+
+Don't forget to create desktop entry.
