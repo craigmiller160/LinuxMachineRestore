@@ -75,3 +75,9 @@ The custom build tool needs to be installed for future development.
 ```
 npm i -g @craigmiller160/craig-build
 ```
+
+## Setup Helm3 Alias
+
+In `.bash_profile`, add the following line:
+
+`alias helm='helm3'`
