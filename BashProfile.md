@@ -45,3 +45,12 @@ if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
     source $HOME/.bash-git-prompt/gitprompt.sh
 fi
 ```
+
+## Setup Aliases
+
+Copy the `.bash_alias` file to the home directory. Then add this to the `.bash_profile`.
+
+```
+# Setup Aliases
+source ~/.bash_alias
+```

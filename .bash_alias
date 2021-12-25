@@ -1,0 +1,13 @@
+alias helm='helm3'
+alias gca='git add . && git commit && git push'
+alias gc='git commit && git push'
+alias gb='git checkout'
+
+gbc() {
+    if [[ $# -ne 1 ]]; then
+        echo "Must provide branch name"
+        exit 1
+    fi
+    eval "git checkout -b $1"
+    eval "git push -u origin $1"
+}
