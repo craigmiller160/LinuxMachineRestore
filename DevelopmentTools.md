@@ -69,6 +69,12 @@ nodejs=~/Applications/NodeJS/latest
 if [ -d $nodejs ]; then
 	PATH="$nodejs/bin:$PATH"
 fi
+
+# Yarn
+yarn=~/.yarn
+if [ -d $yarn ]; then
+    PATH="$yarn/bin:$PATH"
+fi
 ```
 
 ## IntelliJ
