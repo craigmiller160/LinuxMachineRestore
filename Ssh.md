@@ -20,11 +20,21 @@ Check the machines `~/.ssh` directory for files called `id_rsa` and `id_rsa.pub`
 ssh-keygen -t rsa
 ```
 
-Then transfer it to the server with:
+Then transfer it to the server. NOTE: Password authentication must be enabled on the server for this to work.
 
 ```bash
 ssh-copy-id {lan_ip}
 ```
+
+Lastly, make sure Password authentication is disabled and only SSH keys are allowed. This is changed in the `/etc/ssh/sshd_config` file.
+
+```
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+UsePAM no
+```
+
+Then restart the service with `sudo systemctl restart ssh`
 
 ## Setup Client Machine SSH Config
 
