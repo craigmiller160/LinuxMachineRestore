@@ -20,6 +20,12 @@ Check the machines `~/.ssh` directory for files called `id_rsa` and `id_rsa.pub`
 ssh-keygen -t rsa
 ```
 
+Then transfer it to the server with:
+
+```bash
+ssh-copy-id {lan_ip}
+```
+
 ## Setup Client Machine SSH Config
 
 Add the following to the Client Machine's SSH Config:
