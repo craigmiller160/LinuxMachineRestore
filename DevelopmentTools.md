@@ -151,6 +151,8 @@ if [ -d $maven ]; then
 fi
 ```
 
+Oh, also there is a `settings.xml` file here that needs to go in `~/.m2/settings.xml`. Please update the password field in it too with the password in 1Password.
+
 ## Gradle
 
 First, download the app from this link: https://gradle.org/releases/
