@@ -40,4 +40,4 @@ sudo systemctl restart vsftpd
 
 ## Connecting
 
-Connecting to the FTP server requires using the computer's LAN IP `192.168.7.241` and the username/password of this machine.
+Connecting to the FTP server requires using the computer's LAN IP `192.168.7.241` and the username/password of this machine. Port 21.
