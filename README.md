@@ -12,3 +12,4 @@ Just some helpful guides for when I wipe and restore my machine.
 ### 8. <a href="./Kubernetes.md">Kubernetes</a>
 ### 9. <a href="./Android.md">Android</a>
 ### 10. <a href="./Ssh.md">SSH</a>
+### 11. <a href="./Ftp.md">FTP</a>
